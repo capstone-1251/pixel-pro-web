@@ -1,10 +1,53 @@
-<!-- wp:group {"layout":{"inherit":true}} -->
+<!-- wp:group {"metadata":{"name":"Footer"},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"top"}} -->
 <div class="wp-block-group">
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"30px"}}}} -->
-	<div class="wp-block-group" style="padding-top:80px;padding-bottom:30px">
-		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center">&copy;2025 Cornerstone Counselling</p>
+	<!-- wp:group {"metadata":{"name":"Quick Links"},"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
+	<div class="wp-block-group alignwide"><!-- wp:heading {"level":4,"align":"wide"} -->
+		<h4 class="wp-block-heading alignwide">Quick Links</h4>
+		<!-- /wp:heading -->
+
+		<!-- wp:navigation {"ref":100,"layout":{"type":"flex","orientation":"vertical"}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"metadata":{"name":"Legal"},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:heading {"level":4} -->
+		<h4 class="wp-block-heading">Legal</h4>
+		<!-- /wp:heading -->
+
+		<!-- wp:navigation {"ref":107,"layout":{"type":"flex","orientation":"vertical"}} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"metadata":{"name":"Contact Us"},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:heading {"level":4} -->
+		<h4 class="wp-block-heading">Contact Us</h4>
+		<!-- /wp:heading -->
+
+		<!-- wp:html -->
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.7861960674963!2d-113.56866032302287!3d53.543731659935936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0222e12028cf7%3A0x9c7d1a55785505ae!2sCornerstone%20Counselling!5e0!3m2!1sen!2sca!4v1760040804756!5m2!1sen!2sca"
+			width="250" height="167" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- /wp:html -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"metadata":{"name":"Join Our Mailing List"},"layout":{"type":"constrained","contentSize":"440px"}} -->
+	<div class="wp-block-group"><!-- wp:heading {"level":4} -->
+		<h4 class="wp-block-heading">Join Our Mailing List</h4>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua.</p>
 		<!-- /wp:paragraph -->
+
+		<!-- wp:html -->
+		<form action="/submit-your-form" method="post">
+			<label for="user-email">Email Address:</label><br>
+			<input type="email" id="user-email" name="email" placeholder="you@example.com" required>
+		</form>
+		<!-- /wp:html -->
 	</div>
 	<!-- /wp:group -->
 </div>
