@@ -18,17 +18,75 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"metadata":{"name":"Contact Us"},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group"><!-- wp:heading {"level":4} -->
-		<h4 class="wp-block-heading">Contact Us</h4>
-		<!-- /wp:heading -->
+	<!-- wp:group {"metadata":{"name":"Contact Us"},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Contact Us"},"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group"><!-- wp:heading {"level":4} -->
+			<h4 class="wp-block-heading">Contact Us</h4>
+			<!-- /wp:heading -->
 
-		<!-- wp:html -->
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.7861960674963!2d-113.56866032302287!3d53.543731659935936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0222e12028cf7%3A0x9c7d1a55785505ae!2sCornerstone%20Counselling!5e0!3m2!1sen!2sca!4v1760040804756!5m2!1sen!2sca"
-			width="250" height="167" style="border:0;" allowfullscreen="" loading="lazy"
-			referrerpolicy="no-referrer-when-downgrade"></iframe>
-		<!-- /wp:html -->
+			<!-- wp:group {"metadata":{"name":"Map and Contact Info"},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+			<div class="wp-block-group"><!-- wp:html {"metadata":{"name":"Address Map"}} -->
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.7861960674963!2d-113.56866032302287!3d53.543731659935936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0222e12028cf7%3A0x9c7d1a55785505ae!2sCornerstone%20Counselling!5e0!3m2!1sen!2sca!4v1760040804756!5m2!1sen!2sca"
+					width="250" height="167" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<!-- /wp:html -->
+
+				<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"metadata":{"name":"Address"},"style":{"spacing":{"blockGap":"8px"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+					<div class="wp-block-group"><!-- wp:html {"metadata":{"name":"Location Icon"}} -->
+						<svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M15.3033 15.4928C14.3667 16.4294 12.408 18.3881 11.0603 19.7358C10.2792 20.5169 9.01416 20.5173 8.23311 19.7363C6.90883 18.412 4.98808 16.4912 3.98963 15.4928C0.865436 12.3686 0.865436 7.30328 3.98963 4.17908C7.11382 1.05489 12.1791 1.05489 15.3033 4.17908C18.4275 7.30328 18.4275 12.3686 15.3033 15.4928Z"
+								stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M12.6465 9.83594C12.6465 11.4928 11.3033 12.8359 9.64648 12.8359C7.98963 12.8359 6.64648 11.4928 6.64648 9.83594C6.64648 8.17908 7.98963 6.83594 9.64648 6.83594C11.3033 6.83594 12.6465 8.17908 12.6465 9.83594Z"
+								stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<!-- /wp:html -->
+
+						<!-- wp:paragraph {"metadata":{"name":"Address"}} -->
+						<p>Cornerstone Counselling<br>#400, 10230 142 Street NW<br>Edmonton, AB T5N 3Y6</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:group {"metadata":{"name":"Phone"},"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"8px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"top"}} -->
+					<div class="wp-block-group"><!-- wp:html {"metadata":{"name":"Phone Icon"}} -->
+						<svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M1.82422 3.83594C1.82422 2.73137 3.01855 1.83594 4.49183 1.83594H8.86569C9.4398 1.83594 9.9495 2.11137 10.131 2.51971L12.1288 7.01315C12.3387 7.48526 12.0537 8.00125 11.46 8.2238L8.44923 9.35243C9.91941 11.7972 12.5464 13.7667 15.8072 14.8689L17.3125 12.6117C17.6094 12.1666 18.2976 11.9528 18.9273 12.1102L24.9207 13.608C25.4653 13.7441 25.8327 14.1263 25.8327 14.5567V17.8359C25.8327 18.9405 24.6384 19.8359 23.1651 19.8359H21.8313C10.7817 19.8359 1.82422 13.1202 1.82422 4.83594V3.83594Z"
+								stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<!-- /wp:html -->
+
+						<!-- wp:paragraph {"align":"left","metadata":{"name":"Phone Number"}} -->
+						<p class="has-text-align-left"><a href="tel:7804826215">(780) 482-6215</a></p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:group {"metadata":{"name":"FAX"},"style":{"spacing":{"blockGap":"8px"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+					<div class="wp-block-group"><!-- wp:html {"metadata":{"name":"FAX Icon"}} -->
+						<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.64648 2.83594H3.64648C2.54191 2.83594 1.64648 3.73137 1.64648 4.83594V16.8359C1.64648 17.9405 2.54191 18.8359 3.64648 18.8359H15.6465C16.7511 18.8359 17.6465 17.9405 17.6465 16.8359V4.83594C17.6465 3.73137 16.7511 2.83594 15.6465 2.83594H13.6465M9.64648 1.83594V9.83594M9.64648 9.83594L12.6465 6.83594M9.64648 9.83594L6.64648 6.83594M1.64648 11.8359H4.23227C4.49749 11.8359 4.75184 11.9413 4.93938 12.1288L7.35359 14.543C7.54113 14.7306 7.79548 14.8359 8.0607 14.8359H11.2323C11.4975 14.8359 11.7518 14.7306 11.9394 14.543L14.3536 12.1288C14.5411 11.9413 14.7955 11.8359 15.0607 11.8359H17.6465"
+								stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<!-- /wp:html -->
+
+						<!-- wp:paragraph {"metadata":{"name":"FAX Number"}} -->
+						<p><a href="tel:7804827199">(780) 482-7199</a></p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 
@@ -42,7 +100,7 @@
 			magna aliqua.</p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:html -->
+		<!-- wp:html {"metadata":{"name":"Email Address"}} -->
 		<form action="/submit-your-form" method="post">
 			<label for="user-email">Email Address:</label><br>
 			<input type="email" id="user-email" name="email" placeholder="you@example.com" required>
