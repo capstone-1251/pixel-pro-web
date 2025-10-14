@@ -1,15 +1,129 @@
 <!-- This is our landing page -->
 
-<!-- wp:template-part {"slug":"header","tagName":"header","theme":"pixel-pro-web"} /-->
+<!-- wp:template-part {"slug":"header","theme":"pixel-pro-web","tagName":"header"} /-->
 
 <!-- wp:cover {"overlayColor":"primary","isUserOverlayColor":true,"isDark":false,"metadata":{"name":"Hero"},"layout":{"type":"constrained"}} -->
 <div class="wp-block-cover is-light"><span aria-hidden="true"
         class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span>
     <div class="wp-block-cover__inner-container"><!-- wp:heading -->
-        <h2 class="wp-block-heading">Welcome to Cornerstone2k25...</h2>
+        <h2 class="wp-block-heading">Cornerstone Counselling</h2>
         <!-- /wp:heading -->
+
+        <!-- wp:paragraph {"fontFamily":"nunito"} -->
+        <p class="has-nunito-font-family">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:buttons -->
+        <div class="wp-block-buttons">
+            <!-- wp:button {"textAlign":"center","width":25,"className":"is-style-outline"} -->
+            <div class="wp-block-button has-custom-width wp-block-button__width-25 is-style-outline"><a
+                    class="wp-block-button__link has-text-align-center wp-element-button">Meet our Counsellors</a></div>
+            <!-- /wp:button -->
+        </div>
+        <!-- /wp:buttons -->
     </div>
 </div>
 <!-- /wp:cover -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer","theme":"pixel-pro-web"} /-->
+<!-- wp:group {"metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Featured Services"},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:heading -->
+        <h2 class="wp-block-heading">Featured Services</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:query {"queryId":15,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"name":"Featured Services"},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group">
+                <!-- wp:post-featured-image {"isLink":true,"style":{"border":{"width":"1px"}},"borderColor":"quaternary"} /-->
+
+                <!-- wp:post-title /-->
+
+                <!-- wp:post-content /-->
+            </div>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"metadata":{"name":"Featured Workshops"},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:heading -->
+        <h2 class="wp-block-heading">Featured Workshops</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:query {"queryId":15,"query":{"perPage":2,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"name":"Featured Workshops"},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group"><!-- wp:post-title /-->
+
+                <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+                <div class="wp-block-group">
+                    <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"auto","width":"220px","height":"109px","sizeSlug":"full","style":{"border":{"width":"0px","style":"none"},"layout":{"selfStretch":"fixed","flexSize":"100%"}}} /-->
+
+                    <!-- wp:post-content {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"metadata":{"name":"Pricing"},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:heading -->
+        <h2 class="wp-block-heading">Pricing</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:query {"queryId":15,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"name":"Pricing"},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+            <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group"><!-- wp:post-title {"textAlign":"center"} /--></div>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+
+        <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
+        <div class="wp-block-buttons">
+            <!-- wp:button {"textAlign":"center","width":25,"className":"is-style-outline"} -->
+            <div class="wp-block-button has-custom-width wp-block-button__width-25 is-style-outline"><a
+                    class="wp-block-button__link has-text-align-center wp-element-button">Explore Fees</a></div>
+            <!-- /wp:button -->
+        </div>
+        <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"metadata":{"name":"What People Say About Us"},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:heading -->
+        <h2 class="wp-block-heading">What People Say About Us</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:query {"queryId":15,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"name":"What People Say About Us"},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query">
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+            <!-- wp:group {"style":{"border":{"width":"1px"}},"borderColor":"quaternary","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group has-border-color has-quaternary-border-color" style="border-width:1px">
+                <!-- wp:post-content /-->
+
+                <!-- wp:post-author-name /-->
+            </div>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"pixel-pro-web","tagName":"footer"} /-->
