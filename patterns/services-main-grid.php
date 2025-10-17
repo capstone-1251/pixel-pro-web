@@ -9,7 +9,7 @@
  */
 ?>
 
-<!-- wp:group {"metadata":{"categories":["featured"],"patternName":"my-theme/services-main-grid","name":"Services Main Grid"},"className":"wp-block-cover__inner-container"} -->
+<!-- wp:group {"metadata":{"categories":["featured"],"patternName":"pixel-pro-web/services-main-grid","name":"Services Main Grid"},"className":"wp-block-cover__inner-container"} -->
 <div class="wp-block-group wp-block-cover__inner-container">
     <!-- wp:group {"tagName":"section","metadata":{"name":"Featured Services"},"layout":{"type":"constrained"}} -->
     <section class="wp-block-group"><!-- wp:heading -->
