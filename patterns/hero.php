@@ -2,7 +2,7 @@
 
 /**
  * Title: Hero Section
- * Slug: my-theme/hero
+ * Slug: pixel-pro-web/hero
  * Categories: hero, featured
  * Block Types: core/group
  * Inserter: true
