@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero no button
- * Slug: pixel-pro-web/hero
+ * Slug: pixel-pro-web/hero-no-button
  * Categories: hero, featured
  * Block Types: core/group
  * Inserter: true
