@@ -132,7 +132,7 @@
 				},
 				{
 					"slug": "text-link",
-					"color": "#F1911D",
+					"color": "#3D3D3E",
 					"name": "Text Link"
 				}
 			]
@@ -291,7 +291,7 @@
 					"lineHeight": 1.6
 				}
 			},
-							"latest-posts": {
+			"latest-posts": {
 				"meta": {
 					"color": {
 						"text": "var(--wp--custom--color--gray)"
@@ -405,16 +405,20 @@
 					"name": "Nunito",
 					"fontFace": [
 						{
-							"fontFamily": "Nunito",
-							"fontWeight": "400",
+							"fontFamily": "Nunito Light",
+							"fontWeight": "300",
 							"fontStyle": "normal",
-							"src": "file:./assets/fonts/Nunito-Regular.woff2"
+							"src": [
+								"file:./assets/fonts/Nunito-Light.woff2"
+							]
 						},
 						{
-							"fontFamily": "Nunito",
+							"fontFamily": "Nunito Bold",
 							"fontWeight": "700",
 							"fontStyle": "normal",
-							"src": ["file:./assets/fonts/Nunito-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/Nunito-Bold.woff2"
+							]
 						}
 					]
 				},
@@ -427,7 +431,9 @@
 							"fontFamily": "Clarendon",
 							"fontWeight": "500",
 							"fontStyle": "normal",
-							"src": "file:./assets/fonts/URWClarendonTOT-Med.woff2"
+							"src": [
+								"file:./assets/fonts/URWClarendonTOT-Med.woff2"
+							]
 						}
 					]
 				}
