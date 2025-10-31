@@ -12,11 +12,11 @@
 <div class="wp-block-cover is-light"><span aria-hidden="true"
         class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span>
     <div class="wp-block-cover__inner-container"><!-- wp:heading -->
-        <h2 class="wp-block-heading"></h2>
+        <h2 class="wp-block-heading">Heading</h2>
         <!-- /wp:heading -->
 
-        <!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"heading-5","fontFamily":"nunito"} -->
-        <p class="has-text-align-left has-nunito-font-family has-heading-5-font-size">Lorem ipsum dolor sit amet
+        <!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"body","fontFamily":"nunito"} -->
+        <p class="has-text-align-left has-nunito-font-family has-body-font-size">Lorem ipsum dolor sit amet
             consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
             pretium tellus duis convallis.</p>
         <!-- /wp:paragraph -->
