@@ -10,3 +10,11 @@ Requires PHP: 5.7
 Version: 1.0
 Text Domain: cornerstone-2025
 */
+
+.wp-block-cover {
+    margin-bottom: var(--wp--preset--spacing--120);
+}
+
+.content-card-padding-desktop {
+    padding: var(--wp--preset--spacing--32);
+}
