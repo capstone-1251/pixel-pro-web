@@ -1,0 +1,31 @@
+<!-- wp:cover {"overlayColor":"primary","isUserOverlayColor":true,"isDark":false,"metadata":{"categories":["hero","featured"],"patternName":"pixel-pro-web/hero-with-button-updated","name":"Hero with button updated"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light"><span aria-hidden="true"
+        class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span>
+    <div class="wp-block-cover__inner-container">
+        <!-- wp:heading {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+        <h1 class="wp-block-heading has-white-color has-text-color has-link-color">Cornerstone Counselling</h1>
+        <!-- /wp:heading -->
+
+        <!-- wp:group {"metadata":{"name":"Container for Paragraph"},"layout":{"type":"constrained","contentSize":"580px","justifyContent":"left"}} -->
+        <div class="wp-block-group">
+            <!-- wp:paragraph {"align":"left","placeholder":"Write title…","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-5","fontFamily":"nunito"} -->
+            <p
+                class="has-text-align-left has-white-color has-text-color has-link-color has-nunito-font-family has-heading-5-font-size">
+                Cornerstone Counselling welcomes you as you are. We will guide you through your therapy journey in a
+                safe, nurturing environment.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:buttons -->
+        <div class="wp-block-buttons">
+            <!-- wp:button {"textColor":"text-link","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-link"}}}}} -->
+            <div class="wp-block-button"><a
+                    class="wp-block-button__link has-text-link-color has-text-color has-link-color wp-element-button">Meet
+                    Our Counsellors</a></div>
+            <!-- /wp:button -->
+        </div>
+        <!-- /wp:buttons -->
+    </div>
+</div>
+<!-- /wp:cover -->
