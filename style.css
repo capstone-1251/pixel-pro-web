@@ -11,10 +11,146 @@ Version: 1.0
 Text Domain: cornerstone-2025
 */
 
+.ppw-pricing-card {
+    position: relative;
+    overflow: visible;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 456px;
+    min-height: 268px;
+    width: 100%;
+}
+
+.ppw-price-tag {
+    position: absolute;
+    top: -2.75rem;
+    right: 0;
+    padding: .5rem .5rem;
+    border-radius: 8px;
+    z-index: 10;
+    max-width: 202px;
+    min-height: 69px;
+    width: 100%;
+}
+
+.wp-site-blocks {
+    margin: 0;
+    padding: 0;
+}
+
 .wp-block-cover {
     margin-bottom: var(--wp--preset--spacing--120);
 }
 
+footer.wp-block-template-part {
+    margin-top: var(--wp--preset--spacing--120);
+    color: var(--wp--preset--color--white);
+}
+
 .content-card-padding-desktop {
     padding: var(--wp--preset--spacing--32);
+}
+
+.gap-between-column-desktop {
+    gap: 276px;
+}
+
+body {
+    background-image:
+        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-503.png'),
+        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-455.png'),
+        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-459.png');
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    background-position:
+        left top 600px,
+        right center,
+        left bottom 284px;
+
+    background-size:
+        500px,
+        500px,
+        500px;
+}
+
+/* FOOTER MOBILE LAYOUT REORDER */
+@media (max-width: 768px) {
+
+    .wp-block-column h4,
+    .wp-block-column p,
+    .wp-block-column a {
+        text-align: center;
+
+    }
+
+    section.wp-block-group {
+        justify-content: center;
+    }
+
+    .wp-block-columns.alignwide {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-mail {
+        order: 1;
+    }
+
+    .footer-quick-links {
+        order: 2;
+    }
+
+    .footer-legal {
+        order: 3;
+    }
+
+    .footer-contact {
+        order: 4;
+    }
+
+    .footer-social {
+        order: 5;
+    }
+
+    .wp-block-columns.alignwide>.wp-block-column {
+        flex-basis: 100% !important;
+        max-width: 100%;
+    }
+}
+
+/* CENTER FOOTER NAVIGATION */
+@media (max-width: 768px) {
+
+    /* CENTER NAVIGATION MENU (Quick Links & Legal) */
+    footer .wp-block-navigation__container {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* CENTER CUSTOM HTML FORM (Join Our Mailing List) */
+    footer form,
+    footer form input {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+    }
+
+    footer form input[type="email"] {
+        width: 100%;
+    }
+
+    /* Column with icon + text */
+    footer .footer-contact .wp-block-group.is-vertical {
+        align-items: center !important;
+        text-align: center !important;
+    }
 }
