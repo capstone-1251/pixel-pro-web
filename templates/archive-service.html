@@ -1,0 +1,108 @@
+<!-- wp:template-part {"slug":"header","theme":"pixel-pro-web","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main>
+
+    <!-- SECTION: Counselling     -->
+
+    <!-- wp:group {"tagName":"section","className":"services-counselling","layout":{"type":"constrained"}} -->
+    <section class="services-counselling">
+
+        <!-- Heading -->
+        <!-- wp:heading {"level":2} -->
+        <h2>Counselling</h2>
+        <!-- /wp:heading -->
+
+        <!-- Query: Counselling Services -->
+        <!-- wp:query {
+            "queryId":101,
+            "query":{
+                "postType":"service",
+                "perPage":6,
+                "order":"desc",
+                "orderBy":"date",
+                "taxQuery":[{"taxonomy":"service_type","terms":["counselling"]}]
+            }
+        } -->
+            <!-- wp:post-template -->
+
+                <!-- Card Wrapper -->
+                <!-- wp:group {"className":"service-card"} -->
+                <div class="service-card">
+
+                    <!-- Featured Image -->
+                    <!-- wp:post-featured-image {"isLink":true} /-->
+
+                    <!-- Title -->
+                    <!-- wp:post-title {"isLink":true,"level":3} /-->
+
+                    <!-- Excerpt -->
+                    <!-- wp:post-excerpt {"moreText":"Learn more"} /-->
+
+                </div>
+                <!-- /wp:group -->
+
+            <!-- /wp:post-template -->
+
+            <!-- Pagination -->
+            <!-- wp:query-pagination -->
+                <!-- wp:query-pagination-previous /-->
+                <!-- wp:query-pagination-numbers /-->
+                <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+
+        <!-- /wp:query -->
+
+    </section>
+    <!-- /wp:group -->
+
+    <!-- SECTION: Assessments    -->
+
+    <!-- wp:group {"tagName":"section","className":"services-assessment","layout":{"type":"constrained"}} -->
+    <section class="services-assessment">
+
+        <!-- Heading -->
+        <!-- wp:heading {"level":2} -->
+        <h2>Assessments</h2>
+        <!-- /wp:heading -->
+
+        <!-- Query: Assessment Services -->
+        <!-- wp:query {
+            "queryId":102,
+            "query":{
+                "postType":"service",
+                "perPage":3,
+                "order":"desc",
+                "orderBy":"date",
+                "taxQuery":[{"taxonomy":"service_type","terms":["assessment"]}]
+            }
+        } -->
+            <!-- wp:post-template -->
+
+                <!-- Card Wrapper -->
+                <!-- wp:group {"className":"service-card"} -->
+                <div class="service-card">
+
+                    <!-- Featured Image -->
+                    <!-- wp:post-featured-image {"isLink":true} /-->
+
+                    <!-- Title -->
+                    <!-- wp:post-title {"isLink":true,"level":3} /-->
+
+                    <!-- Excerpt -->
+                    <!-- wp:post-excerpt {"moreText":"Learn more"} /-->
+
+                </div>
+                <!-- /wp:group -->
+
+            <!-- /wp:post-template -->
+
+        <!-- /wp:query -->
+
+    </section>
+    <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"pixel-pro-web","tagName":"footer"} /-->
