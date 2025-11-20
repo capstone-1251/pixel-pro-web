@@ -1,0 +1,55 @@
+<!-- Archive template for Counsellors -->
+
+<!-- wp:template-part {"slug":"header","theme":"pixel-pro-web","tagName":"header"} /-->
+
+<!-- wp:cover {"overlayColor":"primary","isUserOverlayColor":true,"isDark":false,"tagName":"section","metadata":{"categories":["hero","featured"],"patternName":"pixel-pro-web/hero-with-button-updated","name":"Hero with button updated"},"layout":{"type":"constrained"}} -->
+<section class="wp-block-cover is-light"><span aria-hidden="true"
+        class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span>
+    <div class="wp-block-cover__inner-container">
+        <!-- wp:heading {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+        <h1 class="wp-block-heading has-white-color has-text-color has-link-color">Counsellors</h1>
+        <!-- /wp:heading -->
+
+        <!-- wp:group {"metadata":{"name":"Container for Paragraph"},"layout":{"type":"constrained","contentSize":"580px","justifyContent":"left"}} -->
+        <div class="wp-block-group">
+            <!-- wp:paragraph {"align":"left","placeholder":"Write title…","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"heading-5","fontFamily":"nunito"} -->
+            <p
+                class="has-text-align-left has-white-color has-text-color has-link-color has-nunito-font-family has-heading-5-font-size">
+                Not sure where to start? Take a survey to get matched with a counsellor</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:buttons -->
+        <div class="wp-block-buttons">
+            <!-- wp:button {"textColor":"text-link","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-link"}}}}} -->
+            <div class="wp-block-button"><a
+                    class="wp-block-button__link has-text-link-color has-text-color has-link-color wp-element-button">Match
+                    with a Counsellor</a></div>
+            <!-- /wp:button -->
+        </div>
+        <!-- /wp:buttons -->
+    </div>
+</section>
+<!-- /wp:cover -->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main Section"},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+    <!-- wp:query {"queryId":20,"query":{"perPage":15,"pages":0,"offset":0,"postType":"counsellor","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Counsellors query loop"}} -->
+    <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+        <!-- wp:group {"metadata":{"name":"Counsellor Card"},"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}}},"layout":{"inherit":false}} -->
+        <div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px">
+            <!-- wp:post-featured-image /-->
+
+            <!-- wp:post-title {"isLink":true} /-->
+
+            <!-- wp:post-excerpt /-->
+        </div>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+    </div>
+    <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"pixel-pro-web","tagName":"footer"} /-->
