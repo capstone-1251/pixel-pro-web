@@ -11,19 +11,58 @@ Version: 1.0
 Text Domain: cornerstone-2025
 */
 
+/* Home Page Styling */
+.heading-accent {
+    margin-bottom: 2.25rem;
+}
+
+.heading-accent-special {
+    margin-bottom: 4.25rem;
+}
+
+.section {
+    /* re-usable margin bottom for sections */
+    margin-bottom: 7.5rem;
+}
+
+.post-template {
+    /* adds proper spacing to bottom of post templates */
+    margin-bottom: 2.25rem;
+}
+
+.featured-card.has-background {
+    /* removes default padding on card with bg color */
+    padding: 0 !important;
+}
+
+.featured-card {
+    /* styling for cards in the query loops */
+    border-radius: 15px;
+}
+
+.featured-card img {
+    /* removes featured image default border */
+    border: none;
+}
+
+.featured-card-content {
+    /* adds padding aroung the title and excerpt */
+    padding: 1rem;
+}
+
 .ppw-pricing-card {
     position: relative;
     overflow: visible;
     border-radius: 15px;
     padding: 2rem;
-    max-width: 456px;
+    /* max-width: 456px; */
     min-height: 268px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .ppw-price-tag {
     position: absolute;
-    top: -2.75rem;
+    top: -3rem;
     right: 0;
     padding: .5rem .5rem;
     border-radius: 8px;
@@ -31,6 +70,16 @@ Text Domain: cornerstone-2025
     max-width: 202px;
     min-height: 69px;
     width: 100%;
+}
+
+.ppw-price-tag.wp-block-group p {
+  text-align: center !important;
+  line-height: 1.1;
+}
+
+.testimonial-card {
+    border: 1px solid #F1911D;
+    padding: 1.5rem;
 }
 
 .wp-site-blocks {
