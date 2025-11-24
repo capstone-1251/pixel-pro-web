@@ -13,63 +13,63 @@ Text Domain: cornerstone-2025
 
 /* Home Page Styling */
 .heading-accent {
-    margin-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .heading-accent-special {
-    margin-bottom: 4.25rem;
+  margin-bottom: 4.25rem;
 }
 
 .section {
-    /* re-usable margin bottom for sections */
-    margin-bottom: 7.5rem;
+  /* re-usable margin bottom for sections */
+  margin-bottom: 7.5rem;
 }
 
 .post-template {
-    /* adds proper spacing to bottom of post templates */
-    margin-bottom: 2.25rem;
+  /* adds proper spacing to bottom of post templates */
+  margin-bottom: 2.25rem;
 }
 
 .featured-card.has-background {
-    /* removes default padding on card with bg color */
-    padding: 0 !important;
+  /* removes default padding on card with bg color */
+  padding: 0 !important;
 }
 
 .featured-card {
-    /* styling for cards in the query loops */
-    border-radius: 15px;
+  /* styling for cards in the query loops */
+  border-radius: 15px;
 }
 
 .featured-card img {
-    /* removes featured image default border */
-    border: none;
+  /* removes featured image default border */
+  border: none;
 }
 
 .featured-card-content {
-    /* adds padding aroung the title and excerpt */
-    padding: 1rem;
+  /* adds padding aroung the title and excerpt */
+  padding: 1rem;
 }
 
 .ppw-pricing-card {
-    position: relative;
-    overflow: visible;
-    border-radius: 15px;
-    padding: 2rem;
-    /* max-width: 456px; */
-    min-height: 268px;
-    /* width: 100%; */
+  position: relative;
+  overflow: visible;
+  border-radius: 15px;
+  padding: 2rem;
+  /* max-width: 456px; */
+  min-height: 268px;
+  /* width: 100%; */
 }
 
 .ppw-price-tag {
-    position: absolute;
-    top: -3rem;
-    right: 0;
-    padding: .5rem .5rem;
-    border-radius: 8px;
-    z-index: 10;
-    max-width: 202px;
-    min-height: 69px;
-    width: 100%;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  z-index: 10;
+  max-width: 202px;
+  min-height: 69px;
+  width: 100%;
 }
 
 .ppw-price-tag.wp-block-group p {
@@ -78,30 +78,30 @@ Text Domain: cornerstone-2025
 }
 
 .testimonial-card {
-    border: 1px solid #F1911D;
-    padding: 1.5rem;
+  border: 1px solid #f1911d;
+  padding: 1.5rem;
 }
 
 .wp-site-blocks {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wp-block-cover {
-    margin-bottom: var(--wp--preset--spacing--120);
+  margin-bottom: var(--wp--preset--spacing--120);
 }
 
 footer.wp-block-template-part {
-    margin-top: var(--wp--preset--spacing--120);
-    color: var(--wp--preset--color--white);
+  margin-top: var(--wp--preset--spacing--120);
+  color: var(--wp--preset--color--white);
 }
 
 .content-card-padding-desktop {
-    padding: var(--wp--preset--spacing--32);
+  padding: var(--wp--preset--spacing--32);
 }
 
 .gap-between-column-desktop {
-    gap: 276px;
+  gap: 276px;
 }
 
 /* TYPOGRAPHY SCALE */
@@ -113,7 +113,6 @@ h2 {
   font-size: clamp(28px, 3vw, 48px);
 }
 
-
 h3 {
   font-size: clamp(22px, 3vw, 40px);
 }
@@ -122,7 +121,8 @@ body {
   font-size: clamp(16px, 1.5vw, 20px);
 }
 
-button, .text-button {
+button,
+.text-button {
   font-size: clamp(16px, 1.5vw, 20px);
 }
 
@@ -143,101 +143,123 @@ button, .text-button {
 }
 
 body {
-    background-image:
-        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-503.png'),
-        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-455.png'),
-        url('http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-459.png');
+  background-image: url("http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-503.png"),
+    url("http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-455.png"),
+    url("http://cornerstonetesting.g-squareddev.com/wp-content/uploads/2025/11/bg-vector-459.png");
 
-    background-repeat:
-        no-repeat,
-        no-repeat,
-        no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 
-    background-position:
-        left top 600px,
-        right center,
-        left bottom 284px;
+  background-position: left top 600px, right center, left bottom 284px;
 
-    background-size:
-        500px,
-        500px,
-        500px;
+  background-size: 500px, 500px, 500px;
 }
 
 /* FOOTER MOBILE LAYOUT REORDER */
 @media (max-width: 768px) {
+  .wp-block-column h4,
+  .wp-block-column p,
+  .wp-block-column a {
+    text-align: center;
+  }
 
-    .wp-block-column h4,
-    .wp-block-column p,
-    .wp-block-column a {
-        text-align: center;
+  section.wp-block-group {
+    justify-content: center;
+  }
 
-    }
+  .wp-block-columns.alignwide {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 
-    section.wp-block-group {
-        justify-content: center;
-    }
+  .footer-mail {
+    order: 1;
+  }
 
-    .wp-block-columns.alignwide {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
+  .footer-quick-links {
+    order: 2;
+  }
 
-    .footer-mail {
-        order: 1;
-    }
+  .footer-legal {
+    order: 3;
+  }
 
-    .footer-quick-links {
-        order: 2;
-    }
+  .footer-contact {
+    order: 4;
+  }
 
-    .footer-legal {
-        order: 3;
-    }
+  .footer-social {
+    order: 5;
+  }
 
-    .footer-contact {
-        order: 4;
-    }
+  .wp-block-columns.alignwide > .wp-block-column {
+    flex-basis: 100% !important;
+    max-width: 100%;
+  }
+}
 
-    .footer-social {
-        order: 5;
-    }
+/* HAMBURGER MENU - 3 LINES FIX */
+.wp-block-navigation button[aria-label*="menu" i] svg {
+  display: none;
+}
 
-    .wp-block-columns.alignwide>.wp-block-column {
-        flex-basis: 100% !important;
-        max-width: 100%;
-    }
+.wp-block-navigation button[aria-label*="menu" i] {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::before,
+.wp-block-navigation button[aria-label*="menu" i]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::before {
+  top: 4px;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::after {
+  bottom: 4px;
+}
+
+/* Middle line */
+.wp-block-navigation button[aria-label*="menu" i] {
+  background: linear-gradient(currentColor, currentColor) no-repeat center/100%
+    2px;
 }
 
 /* CENTER FOOTER NAVIGATION */
 @media (max-width: 768px) {
+  /* CENTER NAVIGATION MENU (Quick Links & Legal) */
+  footer .wp-block-navigation__container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 
-    /* CENTER NAVIGATION MENU (Quick Links & Legal) */
-    footer .wp-block-navigation__container {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
+  /* CENTER CUSTOM HTML FORM (Join Our Mailing List) */
+  footer form,
+  footer form input {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
 
-    /* CENTER CUSTOM HTML FORM (Join Our Mailing List) */
-    footer form,
-    footer form input {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block !important;
-    }
+  footer form input[type="email"] {
+    width: 100%;
+  }
 
-    footer form input[type="email"] {
-        width: 100%;
-    }
-
-    /* Column with icon + text */
-    footer .footer-contact .wp-block-group.is-vertical {
-        align-items: center !important;
-        text-align: center !important;
-    }
+  /* Column with icon + text */
+  footer .footer-contact .wp-block-group.is-vertical {
+    align-items: center !important;
+    text-align: center !important;
+  }
 }
