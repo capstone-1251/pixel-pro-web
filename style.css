@@ -12,6 +12,7 @@ Text Domain: cornerstone-2025
 */
 
 /* Home Page Styling */
+/* class not needed using default */
 .heading-accent {
   margin-bottom: 2.25rem;
 }
@@ -21,12 +22,17 @@ Text Domain: cornerstone-2025
 }
 
 .section {
-  /* re-usable margin bottom for sections */
+  /* re-usable margin bottom for sections with mb of 120px */
   margin-bottom: 7.5rem;
 }
 
+.section-column {
+    /* re-usable margin bottom for sections in columns 82px */
+    margin-bottom: 5.125rem;
+}
+
 .post-template {
-  /* adds proper spacing to bottom of post templates */
+  /* adds proper spacing to bottom of post templates 36px */
   margin-bottom: 2.25rem;
 }
 
@@ -46,7 +52,7 @@ Text Domain: cornerstone-2025
 }
 
 .featured-card-content {
-  /* adds padding aroung the title and excerpt */
+  /* adds padding around the title and excerpt */
   padding: 1rem;
 }
 
@@ -54,7 +60,7 @@ Text Domain: cornerstone-2025
   position: relative;
   overflow: visible;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1rem;
   /* max-width: 456px; */
   min-height: 268px;
   /* width: 100%; */
@@ -82,6 +88,20 @@ Text Domain: cornerstone-2025
   padding: 1.5rem;
 }
 
+
+.featured-workshop-card,
+.content-block-blue,
+.cancellation-policy-column {
+    border-radius: 15px;
+}
+
+.cancellation-policy-full {
+    /* Styling for the full width cancellation block */
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 5.125rem;
+}
+
 .wp-site-blocks {
   margin: 0;
   padding: 0;
@@ -101,7 +121,11 @@ footer.wp-block-template-part {
 }
 
 .gap-between-column-desktop {
-  gap: 276px;
+  gap: 128px;
+}
+
+h1.wp-block-post-title {
+    color: #000000;
 }
 
 /* TYPOGRAPHY SCALE */
@@ -154,6 +178,49 @@ body {
   background-size: 500px, 500px, 500px;
 }
 
+/* FOOTER BACKGROUND COLOR & PADDING */
+footer.wp-block-template-part {
+    background-color: var(--wp--preset--color--primary);
+    padding: 60px 0;
+}
+
+@media (max-width: 599px) {
+	/* HAMBURGER MENU - 3 LINES FIX */
+.wp-block-navigation button[aria-label*="menu" i] svg {
+  display: none;
+}
+
+.wp-block-navigation button[aria-label*="menu" i] {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::before,
+.wp-block-navigation button[aria-label*="menu" i]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::before {
+  top: 4px;
+}
+
+.wp-block-navigation button[aria-label*="menu" i]::after {
+  bottom: 4px;
+}
+
+/* Middle line */
+.wp-block-navigation button[aria-label*="menu" i] {
+  background: linear-gradient(currentColor, currentColor) no-repeat center/100%
+    2px;
+}
+}
+
 /* FOOTER MOBILE LAYOUT REORDER */
 @media (max-width: 768px) {
   .wp-block-column h4,
@@ -196,41 +263,11 @@ body {
     flex-basis: 100% !important;
     max-width: 100%;
   }
-}
-
-/* HAMBURGER MENU - 3 LINES FIX */
-.wp-block-navigation button[aria-label*="menu" i] svg {
-  display: none;
-}
-
-.wp-block-navigation button[aria-label*="menu" i] {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.wp-block-navigation button[aria-label*="menu" i]::before,
-.wp-block-navigation button[aria-label*="menu" i]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: currentColor;
-}
-
-.wp-block-navigation button[aria-label*="menu" i]::before {
-  top: 4px;
-}
-
-.wp-block-navigation button[aria-label*="menu" i]::after {
-  bottom: 4px;
-}
-
-/* Middle line */
-.wp-block-navigation button[aria-label*="menu" i] {
-  background: linear-gradient(currentColor, currentColor) no-repeat center/100%
-    2px;
+  
+  /* UNSET THE GAP BETWEEN COLUMNS */
+  .gap-between-column-desktop {
+  	gap: 16px !important;
+  }
 }
 
 /* CENTER FOOTER NAVIGATION */
