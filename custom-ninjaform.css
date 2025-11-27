@@ -1,0 +1,52 @@
+/* input fields round edges */
+.nf-form-cont input[type="text"],
+.nf-form-cont input[type="email"],
+.nf-form-cont input[type="tel"],
+.nf-form-cont input[type="number"],
+.nf-form-cont input[type="url"],
+.nf-form-cont textarea,
+.nf-form-cont select {
+    border-radius: 6px !important;
+    padding: .6rem;
+}
+
+
+/* custom arrow */
+.nf-form-cont select {
+    padding-right: 40px !important;
+    border-radius: 12px !important;
+    border: 1px solid #ccc;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 20 20'%3E%3Cpath fill='%23999' d='M5.516 7.548l4.484 4.477 4.484-4.477L16 9.064l-6 6-6-6z'/%3E%3C/svg%3E") no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    appearance: none !important;
+}
+
+/* submit */
+.nf-form-cont .nf-field-element input[type="submit"],
+.nf-form-cont .nf-field-element input[type="button"] {
+    background-color: var(--wp--preset--color--button);
+    border-radius: 3.125rem;
+    color: var(--wp--preset--color--white);
+    font-family: var(--wp--preset--font-family--nunito);
+    font-size: var(--wp--preset--font-size--);
+    font-weight: 800;
+    padding-top: 1em;
+    padding-right: 5em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* button states */
+
+.nf-form-cont .nf-field-element input[type="submit"]:hover,
+.nf-form-cont .nf-field-element input[type="button"]:hover {
+    background-color: #EFBE7D !important;
+}
+
+.nf-form-cont .nf-field-element input[type="submit"]:active,
+.nf-form-cont .nf-field-element input[type="button"]:active {
+    background-color: #14C7A8 !important;
+}
