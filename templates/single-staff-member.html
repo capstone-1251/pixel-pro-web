@@ -1,0 +1,17 @@
+<!-- This template displays dynamic Staff details using ACF fields via the Meta Field Block. -->
+
+<!-- wp:template-part {"slug":"header","theme":"pixel-pro-web","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main Group"},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+    <!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"staff_image","hideEmpty":true,"className":"mfb-staff-image"} /-->
+
+    <!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"staff_title","hideEmpty":true,"tagName":"h4","className":"mfb-staff-title"} /-->
+
+    <!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"staff_position","hideEmpty":true,"tagName":"p","className":"mfb-staff-position"} /-->
+
+    <!-- wp:mfb/meta-field-block {"fieldType":"acf","fieldName":"staff_bio","hideEmpty":true,"tagName":"p","className":"mfb-staff-bio"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"pixel-pro-web","tagName":"footer"} /-->
