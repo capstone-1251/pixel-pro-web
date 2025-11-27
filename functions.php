@@ -54,7 +54,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('pixel-pro-web-style', get_stylesheet_uri());
 
     // Example for custom CSS if needed later:
-    // wp_enqueue_script('pixel-pro-web-custom', get_template_directory_uri() . '/assets/css/custom.css', [], null, true);
+    wp_enqueue_style('pixel-pro-web-custom-ninjaform', get_template_directory_uri() . '/custom-ninjaform.css', [], null);
 
     // Example for custom JS if needed later:
     // wp_enqueue_script('pixel-pro-web-script', get_template_directory_uri() . '/assets/js/main.js', [], null, true);
