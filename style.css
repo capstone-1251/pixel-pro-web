@@ -75,13 +75,19 @@ Text Domain: cornerstone-2025
   border-radius: 15px !important;
 }
 
-/* 1. Force the Header to the front (Layer 100) */
+/* 1. Make Header Sticky AND in Front */
 header {
-  position: relative;
-  z-index: 100 !important;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 999 !important;
+  background-color: var(--wp--preset--color--white);
+  border-bottom: none;
+  box-shadow: none;
+  margin-bottom: 2rem;
 }
 
-/* 2. Force the Price Tags to the back (Layer 1) */
+/* 2. Keep Price Tags in the Back */
 .ppw-price-tag {
   position: relative;
   z-index: 1 !important;
