@@ -59,6 +59,10 @@ Text Domain: cornerstone-2025
   padding: 1rem;
 }
 
+.services-counsellors-card {
+  border-radius: 15px;
+}
+
 .featured-workshop-card {
   display: flex;
   flex-direction: row;
@@ -320,6 +324,19 @@ p.footer-link > a {
 /* BUTTON HOVER */
 .wp-block-button > .wp-block-button__link:hover {
   background: var(--wp--preset--color--hover);
+}
+
+/* CENTER SEE MORE COUNSELLORS BUTTON */
+.wp-block-button.see-more-counsellors-button {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.wp-block-button.see-more-counsellors-button .wp-block-button__link {
+  display: block !important;
 }
 
 /* EMAIL INPUT FIELD */
