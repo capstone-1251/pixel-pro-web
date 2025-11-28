@@ -59,6 +59,10 @@ Text Domain: cornerstone-2025
   padding: 1rem;
 }
 
+.services-counsellors-card {
+  border-radius: 15px;
+}
+
 .featured-workshop-card {
   display: flex;
   flex-direction: row;
