@@ -63,6 +63,18 @@ Text Domain: cornerstone-2025
   border-radius: 15px;
 }
 
+.services-pictures-counsellors-card {
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+
+.services-pictures-counsellors-card img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 15px !important;
+}
+
 .featured-workshop-card {
   display: flex;
   flex-direction: row;
