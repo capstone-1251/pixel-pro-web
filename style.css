@@ -79,12 +79,12 @@ Text Domain: cornerstone-2025
 header {
   position: sticky;
   position: -webkit-sticky;
-  top: 0px;
+  top: 32px;
   z-index: 999 !important;
   background-color: var(--wp--preset--color--white);
   border-bottom: none;
   box-shadow: none;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 /* 2. Keep Price Tags in the Back */
