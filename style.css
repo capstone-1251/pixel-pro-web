@@ -322,6 +322,19 @@ p.footer-link > a {
   background: var(--wp--preset--color--hover);
 }
 
+/* CENTER SEE MORE COUNSELLORS BUTTON */
+.wp-block-button.see-more-counsellors-button {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.wp-block-button.see-more-counsellors-button .wp-block-button__link {
+  display: block !important;
+}
+
 /* EMAIL INPUT FIELD */
 #nf-field-36 {
   height: 48px !important;
