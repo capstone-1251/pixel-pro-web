@@ -448,6 +448,13 @@ nf-fields-wrap {
   width: 100%;
 }
 
+
+/* Counsellor Card in Featured Image responsive */
+.counsellor-card .wp-block-post-featured-image {
+    width: 100%;
+    overflow: hidden;
+}
+
 .body-large > .prefix,
 .body-large > span {
   font-size: var(--wp--preset--font-size--body-large);
