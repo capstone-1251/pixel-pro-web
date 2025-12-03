@@ -448,11 +448,10 @@ nf-fields-wrap {
   width: 100%;
 }
 
-
 /* Counsellor Card in Featured Image responsive */
 .counsellor-card .wp-block-post-featured-image {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .body-large > .prefix,
@@ -469,40 +468,6 @@ nf-fields-wrap {
 }
 
 @media (max-width: 599px) {
-  /* HAMBURGER MENU - 3 LINES FIX */
-  .wp-block-navigation button[aria-label*="menu" i] svg {
-    display: none;
-  }
-
-  .wp-block-navigation button[aria-label*="menu" i] {
-    position: relative;
-    width: 24px;
-    height: 24px;
-  }
-
-  .wp-block-navigation button[aria-label*="menu" i]::before,
-  .wp-block-navigation button[aria-label*="menu" i]::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: currentColor;
-  }
-
-  .wp-block-navigation button[aria-label*="menu" i]::before {
-    top: 4px;
-  }
-
-  .wp-block-navigation button[aria-label*="menu" i]::after {
-    bottom: 4px;
-  }
-
-  /* Middle line */
-  .wp-block-navigation button[aria-label*="menu" i] {
-    background: linear-gradient(currentColor, currentColor) no-repeat
-      center/100% 2px;
-  }
 }
 
 /* HOME PAGE MEDIA QUERIES */
