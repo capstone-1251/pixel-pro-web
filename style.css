@@ -467,7 +467,14 @@ nf-fields-wrap {
   border-radius: 15px;
 }
 
-@media (max-width: 599px) {
+nav.hamburger-nav .wp-block-navigation__responsive-container-open svg {
+  width: 40px !important; /* Increase width */
+  height: 40px !important; /* Increase height */
+}
+
+/* Optional: Make clickable area bigger */
+nav.hamburger-nav .wp-block-navigation__responsive-container-open {
+  padding: 8px !important;
 }
 
 /* HOME PAGE MEDIA QUERIES */
